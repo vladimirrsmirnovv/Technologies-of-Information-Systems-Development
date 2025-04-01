@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>The Great Keksby</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="page-header">
+      <div class="container">
+        <div class="header-top clearfix">
+          <div class="header-logo">
+            <img src="img/logo.png" alt="The Great Keksby" width="205" height="55">
+          </div>
+          <ul class="main-nav clearfix">
+            <li><a href="index.html">Мои заказы</a></li>
+            <li><a href="otzyvy.html">Корзина</a></li>
+          </ul>
+          <a class="btn btn-quick-order" href="#">Заказать</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="popular-and-price">
+      <div class="container">
+        <h2 class="section-title">Каталог</h2>
+        <table class="price-list">
+          <tr>
+			<td class="price-image"><img src="img/apple.png" alt="Яблоко" width="150" height="150"></td>
+            <td class="price-item"><p class="price-name">Название товара</p>
+				<p class="price-master">Описание товара</p>
+				<p class="price-cost">500 руб.</p>
+				<form action="components/add_to_basket.php" name="Test">
+					<input type="hidden" name="name" value="1" >
+					<input type="text" name="quantity">
+					<input type="image" class="basket" src="img/buy64.png">
+				</form>
+			</td>
+			<td class="price-image"><img src="img/peach.png" alt="Персик" width="150" height="150"></td>
+            <td class="price-item"><p class="price-name">Название товара</p>
+				<p class="price-master">Описание товара</p>
+				<p class="price-cost">500 руб.</p>
+				<form action="components/add_to_basket.php" name="Test">
+					<input type="hidden" name="name" value="2" >
+					<input type="text" name="quantity">
+					<input type="image" class="basket" src="img/buy64.png">
+				</form>
+			</td>
+          </tr>
+		  <tr>
+			<td class="price-image"><img src="img/pear.png" alt="Груша" width="150" height="150"></td>
+            <td class="price-item"><p class="price-name">Название товара</p>
+				<p class="price-master">Описание товара</p>
+				<p class="price-cost">500 руб.</p>
+				<form action="components/add_to_basket.php" name="Test">
+					<input type="hidden" name="name" value="3" >
+					<input type="text" name="quantity">
+					<input type="image" class="basket" src="img/buy64.png">
+				</form>
+			</td>
+			<td width="150"></td>
+            <td  class="price-item"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+
+    <div class="feedback">
+      <div class="container">
+        <h2 class="section-title">Добавить товар</h2>
+        <form class="feedback-form" action="/keksby-mail" method="post">
+          <div class="clearfix">
+            <div class="feedback-form-group feedback-form-group-left-part">
+              <label for="phone">Название товара:</label>
+              <input type="text" name="fullname" id="fullname">
+            </div>
+
+            <div class="feedback-form-group feedback-form-group-right-part">
+              <label for="email">Цена:</label>
+              <input type="text" name="city" id="city">
+            </div>
+          </div>
+          <div class="clearfix">
+            <div class="feedback-form-group feedback-form-group-long">
+              <label for="phone">Ссылка на изображение:</label>
+              <input type="text" name="phone" id="phone">
+            </div>
+          </div>
+          <div class="feedback-form-group">
+            <label for="message">Описание товара:</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <input class="btn" type="submit" value="Отправить">
+        </form>
+      </div>
+    </div>
+
+
+    <div class="page-footer">
+      <div class="container">
+        <div class="clearfix">
+          <div class="footer-social">
+            <b>Давайте дружить!</b>
+            <a class="social-btn social-btn-vk" href="https://vk.com/htmlacademy">Вконтакте</a>
+            <a class="social-btn social-btn-fb" href="https://facebook.com/htmlacademy">Фейсбук</a>
+            <a class="social-btn social-btn-in" href="https://instagram.com/htmlacademy">Инстаграм</a>
+          </div>
+          <div class="footer-copyright">
+            С <span class="heart">любовью</span> для <a href="https://htmlacademy.ru">HTML Academy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
